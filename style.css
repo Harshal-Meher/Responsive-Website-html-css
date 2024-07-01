@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  /* height: 100%; */
+  width: 100%;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 3vw;
+}
+.nav img {
+    /* width: 20vw; */
+    width: 100px;
+    height: 100px;
+  }
+.nav-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.nav-part2 h4 {
+  font-size: 1.2vw;
+}
+
+.nav-part2 i {
+  display: none;
+  font-size: 1.5vw;
+}
+
+button {
+  padding: 0.5vw 1.4vw;
+  border-radius: 6px;
+  background-color: royalblue;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+.nav-part2 button:hover {
+  background-color: rgb(93, 124, 216);
+}
+.content {
+  width: 100%;
+  height: calc(100% - 100px);
+  /* background-color: antiquewhite; */
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid #dadadd;
+}
+.left {
+  /* background-color: aqua; */
+  padding: 4vw 5vw;
+  width: 60%;
+}
+.left p {
+  padding: 1.5vw;
+}
+.left h1 {
+  padding: 2vw;
+}
+.left button {
+  margin-left: 25px;
+}
+.right {
+  width: 40%;
+}
+.right img {
+  padding: 2vw 2vw;
+}
+.cr-1 img{
+    width: 400px;
+    margin: 80px 80px;
+}
+.company-logo {
+  display: flex;
+  justify-content: center;
+  padding: 10vw;
+  gap: 40px;
+  border-bottom: 2px solid #dadadd;
+
+}
+.company-logo img {
+  width: 150px;
+}
+
+.cr-1{
+    flex-direction: column;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 80px;
+    flex-wrap: wrap;
+    gap: 200px;
+    position: relative;
+    top: 30px;
+}
+.profile h2{
+    text-align: center;
+    padding: 10px;
+}
+.profile button{
+    /* width: 100%; */
+    display: block;
+    margin: auto;
+}
+.profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.reg-form {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 80px;
+  }
+  
+  .reg-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reg-form h2 {
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  .reg-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .reg-form button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+  }
+
+
+  footer {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    top: 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 540px;
+    padding: 100px 50px;
+  }
+@media (max-width: 600px) {
+  .nav {
+    /* background-color: rgb(2, 33, 23); */
+    /* color: #fff; */
+    padding: 0 10px;
+    /* background-color: bisque; */
+
+    height: 50px;
+  }
+  .nav-part2 h4 {
+    display: none;
+  }
+  .nav-part2 button {
+    display: none;
+  }
+  .nav-part2 i {
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: red;
+  }
+
+  .content {
+    
+    width: 100%;
+    height: calc(100% - 60px);
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    height: 60%;
+    padding: 4vw 6vw;
+  }
+  .left h1 {
+    font-size: 6vw;
+    line-height: 11vw;
+  }
+  .left p {
+    width: 100%;
+    font-size: 4vw;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+  }
+  .content button {
+    padding: 4vw 6vw;
+    font-size: 3vw;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .right {
+    width: 100%;
+    height: 40%;
+    /* background-color: bisque; */
+  }
+
+  .right img {
+    display: block;
+    margin: auto;
+    
+  }
+  .left .btn-cl {
+    display: block;
+    margin: auto;
+  }
+  .left h1 {
+    text-align: center;
+  }
+  .left .btn-cl-h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .company-logo {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+   .cr-1{
+    width: 100%;
+  }
+  .cr-1 img {
+    border-bottom: 2px solid #dadadd;
+    width: 300px;
+  } 
+  .profile{
+    flex-direction: column;
+    gap: 40px;
+  }
+  .profile button{
+    padding: 10px;
+    border: none;
+  }
+  .profile button:hover{
+    border: 1px solid black;
+  }
+  
+.reg-form{
+    width: 320px;
+    display: block;
+    margin: auto;
+}
+footer{
+    height: 100px;
+    background-color: beige;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    padding: 120px 20px;
+}
+
+}
