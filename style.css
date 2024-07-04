@@ -7,8 +7,10 @@ html,
 body {
   height: 100%;
   width: 100%;
+  /* color: #fff; */
 }
 .main {
+ 
   /* height: 100%; */
   width: 100%;
   position: relative;
@@ -34,6 +36,10 @@ body {
 .nav-part2 h4 {
   font-size: 1.2vw;
 }
+.nav-part2 h4:hover{
+  /* text-decoration: underline; */
+  color: royalblue;
+}
 
 .nav-part2 i {
   display: none;
@@ -53,6 +59,11 @@ button {
   background-color: rgb(93, 124, 216);
 }
 .content {
+  background-image: url("https://t4.ftcdn.net/jpg/07/55/46/83/240_F_755468338_1BS8NWpv3uJjWY3cZtM4xeaIB9T6fI8U.jpg");
+  background-size: cover;
+  color: #fff;
+
+  
   width: 100%;
   height: calc(100% - 100px);
   /* background-color: antiquewhite; */
@@ -62,12 +73,32 @@ button {
 }
 .left {
   /* background-color: aqua; */
-  padding: 4vw 5vw;
+  padding: 2vw 5vw;
   width: 60%;
 }
 .left p {
   padding: 1.5vw;
 }
+#grp{
+  padding:1vw; 
+}
+#grp li{
+
+  /* text-align: center; */
+  margin-left: 5vw;
+  padding:0.5vw;
+  font-size: 20px;
+  font-weight: 900;
+}
+#grp li:hover{
+text-decoration: underline;
+color:royalblue;
+}
+
+
+
+
+
 .left h1 {
   padding: 2vw;
 }
@@ -78,7 +109,7 @@ button {
   width: 40%;
 }
 .right img {
-  padding: 2vw 2vw;
+  padding: 7vw 2vw;
 }
 .cr-1 img{
     width: 400px;
@@ -87,7 +118,7 @@ button {
 .company-logo {
   display: flex;
   justify-content: center;
-  padding: 10vw;
+  padding: 5vw;
   gap: 40px;
   border-bottom: 2px solid #dadadd;
 
@@ -243,6 +274,12 @@ button {
     font-size: 30px;
     text-align: center;
   }
+
+  #grp{
+    padding: 7vw 5vw;
+  }
+
+
   .company-logo {
     flex-wrap: wrap;
     /* flex-direction: column; */
